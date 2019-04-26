@@ -2,8 +2,8 @@
 <p>
   ![alt text](https://raw.githubusercontent.com/fadamedia/ActiveSync/master/etc/eas.png)
 </p>
-<p>
-## ActiveSync is an open-source framework to synchronize ActiveSync compatible devices such as mobile phones (Android, iOS, Windows Phone, Symbian), tablets, Outlook, etc. </p>
+<h3>
+ActiveSync is an open-source framework to synchronize ActiveSync compatible devices such as mobile phones (Android, iOS, Windows Phone, Symbian), tablets, Outlook, etc. </h3>
 <p>I wrote it from scratch and I hope it would be the primary and robust implementation of ActiveSync protocol in .Net. You can checkout Microsoft EAS(Exchange ActiveSync) command reference protocol <a href="https://docs.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd/1a3490f1-afe1-418a-aa92-6f630036d65a"> here. It was my primary references to implement this framework.
   </a>
 <p>
