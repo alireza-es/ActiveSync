@@ -1,14 +1,14 @@
 # Microsft Exchange ActiveSync(EAS) framework in .Net
 <p>
 ActiveSync is an open-source framework to synchronize ActiveSync compatible devices such as mobile phones (Android, iOS, Windows Phone, Symbian), tablets, Outlook, etc. </p>
-<p>I wrote it from scratch and I hope it would be the primary and robust implementation of Active Sync protocol in .Net. </p>
-
+<p>I wrote it from scratch and I hope it would be the primary and robust implementation of ActiveSync protocol in .Net. You can checkout Microsoft EAS(Exchange ActiveSync) command reference protocol <a href="https://docs.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd/1a3490f1-afe1-418a-aa92-6f630036d65a"> here. It was my primary references to implement this framework.
+  </a>
 <p>
 About 5 years ago, I had a project to synchronize an office automation system with mobile. The requirement was that users want to access their contacts and inboxes in mobile. </p>
 <p>We did not want to implement multiple apps for different types of mobile platforms like Android, iOS, Windows Phone, etc. Therefore, we started to research and finally, we decided to implement a standard protocol to support synchronization of items in any device.</p>
-<p>I started to learn about Microsoft Active Sync protocol. This protocol is used in Microsoft Exchange too. At that time, there were no library in .net and I had to implement it from scratch. I try to design a framework to support ActiveSync in .Net and it can be use in anywhere you need!</p>
+<p>I started to learn about Microsoft ActiveSync protocol. This protocol is used in Microsoft Exchange too. At that time, there were no library in .net and I had to implement it from scratch. I try to design a framework to support ActiveSync in .Net and it can be use in anywhere you need!</p>
 <p>
-You can easily have your own implementation of active sync. Just implement these services:
+You can easily have your own implementation of ActiveSync. Just implement these services:
 <UL>
   <li><b>IAuthenticationService:</b> To authenticate users
     <ul>
