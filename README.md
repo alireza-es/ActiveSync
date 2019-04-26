@@ -1,8 +1,6 @@
 # Microsft Exchange ActiveSync(EAS) framework in .Net
 <p>
-  ![alt text](https://github.com/fadamedia/ActiveSync/blob/master/etc/eas.png)
-  ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-
+  ![alt text](https://raw.githubusercontent.com/fadamedia/ActiveSync/master/etc/eas.png)
 </p>
 <p>
 ## ActiveSync is an open-source framework to synchronize ActiveSync compatible devices such as mobile phones (Android, iOS, Windows Phone, Symbian), tablets, Outlook, etc. </p>
