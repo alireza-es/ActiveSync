@@ -1,4 +1,4 @@
-# ActiveSync framework in .Net
+# Microsft Exchange ActiveSync(EAS) framework in .Net
 <p>
 ActiveSync is an open-source framework to synchronize ActiveSync compatible devices such as mobile phones (Android, iOS, Windows Phone, Symbian), tablets, Outlook, etc. </p>
 <p>I wrote it from scratch and I hope it would be the primary and robust implementation of Active Sync protocol in .Net. </p>
