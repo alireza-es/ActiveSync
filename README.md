@@ -6,7 +6,8 @@ I started to learn about Microsoft Active Sync protocol. This protocol is used i
 
 You can easily have your own implementation of active sync. Just implement these services:
 <UL>
-  <li><b>IFolderService:</b> To support synchronization of folders</li>
-  <li><b>IContactService:</b> To support synchronization of contacts</li>
-  <li><b>IEmailService:</b> To support synchronization of emails (or messages in your domain)</li>
+  <li><b style="color:blue">IAuthenticationService:</b> To authenticate users</li>
+  <li><b style="color:blue">IFolderService:</b> To support synchronization of folders</li>
+  <li><b style="color:blue">IContactService:</b> To support synchronization of contacts</li>
+  <li><b style="color:blue">IEmailService:</b> To support synchronization of emails (or messages in your domain)</li>
 </UL>
