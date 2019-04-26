@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{20AE5C48-9B5A-4EDE-ADC5-4B000637B776}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ActiveSync.Core</RootNamespace>
+    <AssemblyName>ActiveSync.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\..\bin\Autofac\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Bootstrapper.Autofac">
+      <HintPath>..\..\bin\Bootstrapper.Autofac\lib\Net40\Bootstrapper.Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="LumiSoft.Net">
+      <HintPath>..\..\bin\Mime\LumiSoft.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationData\AppData.cs" />
+    <Compile Include="ApplicationData\ContactAppData.cs" />
+    <Compile Include="ApplicationData\EmailAppData.cs" />
+    <Compile Include="Comparers\FolderComparerByServerId.cs" />
+    <Compile Include="Comparers\FolderComparerByValue.cs" />
+    <Compile Include="Constants\AirSyncBaseStrings.cs" />
+    <Compile Include="Constants\AirSyncStrings.cs" />
+    <Compile Include="Constants\AutodiscoverStrings.cs" />
+    <Compile Include="Constants\CalendarStrings.cs" />
+    <Compile Include="Constants\ComposeMailStrings.cs" />
+    <Compile Include="Constants\Contacts2Strings.cs" />
+    <Compile Include="Constants\ContactsStrings.cs" />
+    <Compile Include="Constants\DocumentLibraryStrings.cs" />
+    <Compile Include="Constants\Email2Strings.cs" />
+    <Compile Include="Constants\EmailStrings.cs" />
+    <Compile Include="Constants\FolderHierarchyStrings.cs" />
+    <Compile Include="Constants\GALStrings.cs" />
+    <Compile Include="Constants\ItemEstimateStrings.cs" />
+    <Compile Include="Constants\ItemOperationsStrings.cs" />
+    <Compile Include="Constants\MeetingResponseStrings.cs" />
+    <Compile Include="Constants\MoveStrings.cs" />
+    <Compile Include="Constants\NamespaceStrings.cs" />
+    <Compile Include="Constants\NotesStrings.cs" />
+    <Compile Include="Constants\PingStrings.cs" />
+    <Compile Include="Constants\ProvisionStrings.cs" />
+    <Compile Include="Constants\ResolveRecipientsStrings.cs" />
+    <Compile Include="Constants\SearchStrings.cs" />
+    <Compile Include="Constants\SettingsStrings.cs" />
+    <Compile Include="Constants\TasksStrings.cs" />
+    <Compile Include="Constants\ValidateCertStrings.cs" />
+    <Compile Include="DeviceManagement\DeviceManager.cs" />
+    <Compile Include="DeviceManagement\UserDevice.cs" />
+    <Compile Include="Exceptions\InvalidRequestException.cs" />
+    <Compile Include="Exceptions\InvalidSyncKeyException.cs" />
+    <Compile Include="Exceptions\StateNotFoundException.cs" />
+    <Compile Include="Exceptions\StatusParseException.cs" />
+    <Compile Include="Helper\ConfigHelper.cs" />
+    <Compile Include="Helper\ConvertHelper.cs" />
+    <Compile Include="Helper\EmailAddress.cs" />
+    <Compile Include="Helper\EmailHelper.cs" />
+    <Compile Include="Helper\MimeHelper.cs" />
+    <Compile Include="Helper\NameSpaceInfo.cs" />
+    <Compile Include="Helper\XmlHelper.cs" />
+    <Compile Include="Injection\ServiceResolver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requests\ASRequest.cs" />
+    <Compile Include="Requests\eRequestCommand.cs" />
+    <Compile Include="Requests\Handlers\Autodiscover\AutodiscoverRequest.cs" />
+    <Compile Include="Requests\Handlers\Autodiscover\RequestType.cs" />
+    <Compile Include="Requests\Handlers\ComposeMail\SendMailRequest.cs" />
+    <Compile Include="Requests\Handlers\ComposeMail\SmartForwardRequest.cs" />
+    <Compile Include="Requests\Handlers\ComposeMail\SmartReplayRequest.cs" />
+    <Compile Include="Requests\Handlers\FolderSync\FolderCreateRequest.cs" />
+    <Compile Include="Requests\Handlers\FolderSync\FolderDeleteRequest.cs" />
+    <Compile Include="Requests\Handlers\FolderSync\FolderSyncRequest.cs" />
+    <Compile Include="Requests\Handlers\FolderSync\FolderUpdateRequest.cs" />
+    <Compile Include="Requests\Handlers\GetAttachment\GetAttachmentRequest.cs" />
+    <Compile Include="Requests\Handlers\GetItemEstimate\GetItemEstimateRequest.cs" />
+    <Compile Include="Requests\Handlers\ItemOperations\eMIMESendSupport.cs" />
+    <Compile Include="Requests\Handlers\ItemOperations\EmptyFolderContent.cs" />
+    <Compile Include="Requests\Handlers\ItemOperations\FetchItemOperation.cs" />
+    <Compile Include="Requests\Handlers\ItemOperations\ItemOperationsRequest.cs" />
+    <Compile Include="Requests\Handlers\ItemOperations\MoveItemOperation.cs" />
+    <Compile Include="Requests\Handlers\Ping\PingRequest.cs" />
+    <Compile Include="Requests\Handlers\Search\Options.cs" />
+    <Compile Include="Requests\Handlers\Search\SearchRequest.cs" />
+    <Compile Include="Requests\Handlers\Search\Store.cs" />
+    <Compile Include="Requests\Handlers\Sync\ClientCommands\ClientAddCommand.cs" />
+    <Compile Include="Requests\Handlers\Sync\ClientCommands\ClientChangeCommand.cs" />
+    <Compile Include="Requests\Handlers\Sync\ClientCommands\ClientCommand.cs" />
+    <Compile Include="Requests\Handlers\Sync\ClientCommands\ClientDeleteCommand.cs" />
+    <Compile Include="Requests\Handlers\Sync\ClientCommands\ClientFetchCommand.cs" />
+    <Compile Include="Requests\Handlers\Sync\ClientCommands\eClientCommandType.cs" />
+    <Compile Include="Requests\Handlers\Sync\eBodyContentType.cs" />
+    <Compile Include="Requests\Handlers\Sync\eConflictPriority.cs" />
+    <Compile Include="Requests\Handlers\Sync\eFilterType.cs" />
+    <Compile Include="Requests\Handlers\Sync\eMIMESendSupport.cs" />
+    <Compile Include="Requests\Handlers\Sync\eMIMETruncation.cs" />
+    <Compile Include="Requests\Handlers\Sync\Options.cs" />
+    <Compile Include="Requests\Handlers\Sync\RequestCollection.cs" />
+    <Compile Include="Requests\Handlers\Sync\SyncRequest.cs" />
+    <Compile Include="Requests\IRequestHandler.cs" />
+    <Compile Include="Requests\RequestHandlerFactory.cs" />
+    <Compile Include="ResponseObjects\ASResponse.cs" />
+    <Compile Include="ResponseObjects\Autodiscover\AutodiscoverResponse.cs" />
+    <Compile Include="ResponseObjects\ComposeMail\eMailStatus.cs" />
+    <Compile Include="ResponseObjects\ComposeMail\SendMailResponse.cs" />
+    <Compile Include="ResponseObjects\ComposeMail\SmartForwardResponse.cs" />
+    <Compile Include="ResponseObjects\ComposeMail\SmartReplayResponse.cs" />
+    <Compile Include="ResponseObjects\ComposeMail\Source.cs" />
+    <Compile Include="ResponseObjects\FolderSync\eFolderCreateStatus.cs" />
+    <Compile Include="ResponseObjects\FolderSync\eFolderDeleteStatus.cs" />
+    <Compile Include="ResponseObjects\FolderSync\eFolderSyncStatus.cs" />
+    <Compile Include="ResponseObjects\FolderSync\eFolderUpdateStatus.cs" />
+    <Compile Include="ResponseObjects\FolderSync\FolderCreateResponse.cs" />
+    <Compile Include="ResponseObjects\FolderSync\FolderDeleteResponse.cs" />
+    <Compile Include="ResponseObjects\FolderSync\FolderSyncResponse.cs" />
+    <Compile Include="ResponseObjects\FolderSync\FolderUpdateResponse.cs" />
+    <Compile Include="ResponseObjects\GetAttachment\GetAttachmentResponse.cs" />
+    <Compile Include="ResponseObjects\GetItemEstimate\eGetItemEstimateStatus.cs" />
+    <Compile Include="ResponseObjects\GetItemEstimate\GetItemEstimateResponse.cs" />
+    <Compile Include="ResponseObjects\GetItemEstimate\ItemEstimateCollection.cs" />
+    <Compile Include="ResponseObjects\GetItemEstimate\Response.cs" />
+    <Compile Include="ResponseObjects\ItemOperations\ItemOperationsResponse.cs" />
+    <Compile Include="ResponseObjects\ItemOperations\Response.cs" />
+    <Compile Include="ResponseObjects\Ping\PingResponse.cs" />
+    <Compile Include="ResponseObjects\Search\eSearchStatus.cs" />
+    <Compile Include="ResponseObjects\Search\SearchResponse.cs" />
+    <Compile Include="ResponseObjects\Sync\ClientCommands\ClientCommandResponse.cs" />
+    <Compile Include="ResponseObjects\Sync\ClientCommands\eClientCommandResponseType.cs" />
+    <Compile Include="ResponseObjects\Sync\eSyncStatus.cs" />
+    <Compile Include="ResponseObjects\Sync\ResponseCollection.cs" />
+    <Compile Include="ResponseObjects\Sync\ServerCommands\eServerCommandType.cs" />
+    <Compile Include="ResponseObjects\Sync\ServerCommands\ServerCommand.cs" />
+    <Compile Include="ResponseObjects\Sync\SyncResponse.cs" />
+    <Compile Include="StateManagement\FileStateMachine.cs" />
+    <Compile Include="StateManagement\IStateMachine.cs" />
+    <Compile Include="StateManagement\SQLStateMachine.cs" />
+    <Compile Include="StateManagement\StateManager.cs" />
+    <Compile Include="StateManagement\StateObjects\CollectionState.cs" />
+    <Compile Include="StateManagement\StateObjects\FolderHierarchyState.cs" />
+    <Compile Include="StateManagement\StateObjects\StateObject.cs" />
+    <Compile Include="StateManagement\StateObjects\SyncSessionState.cs" />
+    <Compile Include="StateManagement\SyncKey.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Requests\Handlers\Autodiscover\AutodiscoverRequest.xml" />
+    <Content Include="Requests\Handlers\ComposeMail\SendMailRequest.xml" />
+    <Content Include="Requests\Handlers\ComposeMail\SmartForwardRequest.xml" />
+    <Content Include="Requests\Handlers\ComposeMail\SmartReplyRequest.xml" />
+    <Content Include="Requests\Handlers\FolderSync\FolderCreateRequest.xml" />
+    <Content Include="Requests\Handlers\FolderSync\FolderDeleteRequest.xml" />
+    <Content Include="Requests\Handlers\FolderSync\FolderSyncRequest.xml" />
+    <Content Include="Requests\Handlers\FolderSync\FolderUpdateRequest.xml" />
+    <Content Include="Requests\Handlers\GetItemEstimate\GetItemEstimate.xml" />
+    <Content Include="Requests\Handlers\ItemOperations\ItemOperationsRequest.xml" />
+    <Content Include="Requests\Handlers\Ping\PingRequest.xml" />
+    <Content Include="Requests\Handlers\Search\SearchRequest.xml" />
+    <Content Include="Requests\Handlers\Sync\SyncRequest.xml" />
+    <Content Include="ResponseObjects\Autodiscover\AutodiscoverResponse.xml" />
+    <Content Include="ResponseObjects\ComposeMail\SendMailResponse.xml" />
+    <Content Include="ResponseObjects\ComposeMail\SmartForwardResponse.xml" />
+    <Content Include="ResponseObjects\ComposeMail\SmartReplyResponse.xml" />
+    <Content Include="ResponseObjects\FolderSync\FolderCreateResponse.xml" />
+    <Content Include="ResponseObjects\FolderSync\FolderDeleteResponse.xml" />
+    <Content Include="ResponseObjects\FolderSync\FolderSyncResponse.xml" />
+    <Content Include="ResponseObjects\FolderSync\FolderUpdateResponse.xml" />
+    <Content Include="ResponseObjects\GetItemEstimate\GetItemEstimateResponse.xml" />
+    <Content Include="ResponseObjects\ItemOperations\ItemOperationsResponse.xml" />
+    <Content Include="ResponseObjects\Ping\PingResponse.xml" />
+    <Content Include="ResponseObjects\Search\SearchResponse.xml" />
+    <Content Include="ResponseObjects\Sync\SyncResponse.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ActiveSync.SyncContract\ActiveSync.SyncContract.csproj">
+      <Project>{B4AF9C22-3CBA-4536-86AB-1D7A5A5F781E}</Project>
+      <Name>ActiveSync.SyncContract</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sync xmlns="AirSync">
+  <Status>1</Status>
+  <Collections>
+    <Collection>
+      <SyncKey>209d7e710ef8ebdc-1</SyncKey>
+      <CollectionId>1</CollectionId>
+      <Status>1</Status>
+      <Commands>
+        <Add xmlns="AirSync">
+          <ServerId>1:35</ServerId>
+          <ApplicationData>
+            <MessageClass xmlns="Email">IPM.Note</MessageClass>
+            <InternetCPID xmlns="Email">65001</InternetCPID>
+            <ContentClass xmlns="Email">urn:content-classes:message</ContentClass>
+            <To xmlns="Email">a@aaa.com</To>
+            <From xmlns="Email">aaa@b.com</From>
+            <Subject xmlns="Email">test</Subject>
+            <Body xmlns="AirSyncBase">
+              <Type>4</Type>
+              <Truncated>0</Truncated>
+              <Data>
+                Message-ID: &lt;c611b486c5fc4e31a40f64b292ff6b66@f2fb9ce3144d4355b7a37e83db87f8b1&gt;
+                Date: Sat, 26 Jul 2014 15:12:06 GMT
+                Mime-Version: 1.0
+                From: "Display Name" &lt;aaa@b.com&gt;
+                To: "Display Name" &lt;a@aaa.com&gt;
+                Subject: test
+                Content-Type: text/html; charset="utf-8"
+                Content-Transfer-Encoding: base64
+
+                YWFh
+              </Data>
+              <EstimatedDataSize>303</EstimatedDataSize>
+            </Body>
+            <DateReceived xmlns="Email">2014-03-07T12:00:00.000Z</DateReceived>
+            <Importance xmlns="Email">1</Importance>
+            <Read xmlns="Email">0</Read>
+            <Flag />
+            <Categories xmlns="Email" />
+          </ApplicationData>
+        </Add>
+      </Commands>
+    </Collection>
+  </Collections>
+</Sync>

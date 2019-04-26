@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sync xmlns="AirSync">
+  <Status xmlns="AirSync">1</Status>
+  <Collections xmlns="AirSync">
+    <Collection xmlns="AirSync">
+      <SyncKey xmlns="AirSync">428f9d6bec20624c-1</SyncKey>
+      <CollectionId xmlns="AirSync">6</CollectionId>
+      <Status xmlns="AirSync">1</Status>
+      <Commands xmlns="AirSync">
+        <Add xmlns="AirSync">
+          <ServerId xmlns="AirSync">6:12</ServerId>
+          <ApplicationData xmlns="AirSync">
+            <FirstName xmlns="POOMCONTACTS">aaa</FirstName>
+            <LastName xmlns="POOMCONTACTS">bbb</LastName>
+            <FileAs xmlns="POOMCONTACTS">aaa bbb</FileAs>
+            <Email1Address xmlns="POOMCONTACTS">a@b.com</Email1Address>
+            <MobilePhoneNumber xmlns="POOMCONTACTS">512154545</MobilePhoneNumber>
+            <BusinessPhoneNumber xmlns="POOMCONTACTS">213</BusinessPhoneNumber>
+          </ApplicationData>
+        </Add>
+      </Commands>
+    </Collection>
+    <Collection xmlns="AirSync">
+      <SyncKey xmlns="AirSync">d45f127da9deb430-1</SyncKey>
+      <CollectionId xmlns="AirSync">1008</CollectionId>
+      <Status xmlns="AirSync">1</Status>
+      <Commands xmlns="AirSync">
+        <Add xmlns="AirSync">
+          <ServerId xmlns="AirSync">1008:35</ServerId>
+          <ApplicationData xmlns="AirSync">
+            <MessageClass xmlns="Email">IPM.Note</MessageClass>
+            <InternetCPID xmlns="Email">65001</InternetCPID>
+            <ContentClass xmlns="Email">urn:content-classes:message</ContentClass>
+            <To xmlns="Email">a@aaa.com</To>
+            <From xmlns="Email">aaa@b.com</From>
+            <Subject xmlns="Email">test</Subject>
+            <Body xmlns="AirSyncBase">
+              <Type>4</Type>
+              <Truncated>0</Truncated>
+              <Data>Message-ID: &lt;196648005f7d4686ad74af6ef257bd6d@62d47bc379034ca69176c554810973aa&gt;
+Date: Sat, 26 Jul 2014 15:22:53 GMT
+Mime-Version: 1.0
+From: "Display Name" &lt;aaa@b.com&gt;
+To: "Display Name" &lt;a@aaa.com&gt;
+Subject: test
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+YWFh
+</Data>
+              <EstimatedDataSize>303</EstimatedDataSize>
+            </Body>
+            <DateReceived xmlns="Email">2014-03-07T12:00:00.000Z</DateReceived>
+            <Importance xmlns="Email">1</Importance>
+            <Read xmlns="Email">0</Read>
+            <Flag />
+            <Categories xmlns="Email" />
+          </ApplicationData>
+        </Add>
+      </Commands>
+    </Collection>
+  </Collections>
+</Sync>

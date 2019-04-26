@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FolderUpdate xmlns="FolderHierarchy">
+  <SyncKey>123456</SyncKey>
+  <ServerId>mock: 1001</ServerId>
+  <ParentId>0</ParentId>
+  <DisplayName>NewName</DisplayName>
+</FolderUpdate>

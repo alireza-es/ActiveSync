@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<folderhierarchy:FolderSync xmlns:folderhierarchy="FolderHierarchy">
+  <folderhierarchy:Status>1</folderhierarchy:Status>
+  <folderhierarchy:SyncKey>1</folderhierarchy:SyncKey>
+  <folderhierarchy:Changes>
+    <folderhierarchy:Count>2</folderhierarchy:Count>
+    <folderhierarchy:Add>
+      <folderhierarchy:ServerId>1</folderhierarchy:ServerId>
+      <folderhierarchy:ParentId>0</folderhierarchy:ParentId>
+      <folderhierarchy:DisplayName>Inbox</folderhierarchy:DisplayName>
+      <folderhierarchy:Type>2</folderhierarchy:Type>
+    </folderhierarchy:Add>
+    <folderhierarchy:Add>
+      <folderhierarchy:ServerId>2</folderhierarchy:ServerId>
+      <folderhierarchy:ParentId>0</folderhierarchy:ParentId>
+      <folderhierarchy:DisplayName>User Created</folderhierarchy:DisplayName>
+      <folderhierarchy:Type>12</folderhierarchy:Type>
+    </folderhierarchy:Add>
+  </folderhierarchy:Changes>
+</folderhierarchy:FolderSync>
